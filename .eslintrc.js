@@ -38,6 +38,7 @@ module.exports = {
       },
     ],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'import/no-unresolved': 'off',
   },
   settings: {
     'import/resolver': {
