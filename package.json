@@ -5,12 +5,15 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/index.ts",
-    "lint": "eslint src/**/*",
+    "lint:check": "eslint \"src/**/*\"",
+    "lint:fix": "yarn lint:check --fix",
     "test": "jest",
+    "test:unit": "yarn test tests/unit",
+    "test:integration": "yarn test tests/integration",
+    "test:external": "yarn test tests/external",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watchAll",
-    "test:full": "yarn lint && yarn test:coverage",
-    "test:fix": "jest --fix",
+    "test:full": "yarn lint:check && yarn test:coverage",
     "deploy": "serverless deploy"
   },
   "dependencies": {},
