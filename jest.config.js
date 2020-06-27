@@ -9,5 +9,5 @@ module.exports = {
       lines: 90,
     },
   },
-  collectCoverageFrom: ['src/**/*.ts', '!src/index.ts', '!src/serverless.ts'],
+  collectCoverageFrom: ['src/**/*.ts'],
 };
